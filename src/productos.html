@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - Perfumería Xotic</title>
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 font-[Poppins]">
+
+  <!-- Navbar -->
+<nav class="bg-black text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex-shrink-0">
+        <a href="index.html" class="text-2xl font-bold">Perfumería Xotic</a>
+      </div>
+      <div class="hidden md:flex space-x-8 text-lg font-medium">
+        <a href="index.html" class="hover:text-gray-300">Inicio</a>
+        <a href="productos.html" class="hover:text-gray-300">Productos</a>
+        <a href="index.html#nosotros" class="hover:text-gray-300">Nosotros</a>
+        <a href="contacto.html" class="hover:text-gray-300">Contacto</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <section class="py-12 bg-gray-100" id="productos">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6 text-center">Nuestros Productos</h2>
+
+      <!-- Filtros -->
+      <div class="flex flex-wrap justify-center gap-4 mb-10">
+        <select id="filtroGenero" class="px-4 py-2 rounded bg-white shadow border text-gray-800">
+          <option value="todos">Todos los géneros</option>
+          <option value="hombre">Hombre</option>
+          <option value="dama">Dama</option>
+        </select>
+        <select id="filtroTipo" class="px-4 py-2 rounded bg-white shadow border text-gray-800">
+          <option value="todos">Todos los tipos</option>
+          <option value="nicho">Nicho</option>
+          <option value="diseñador">Diseñador</option>
+        </select>
+      </div>
+
+      <!-- Productos -->
+      <div id="contenedorProductos" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        
+        <div class="producto" data-genero="hombre" data-tipo="nicho">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+            <img src="./image/Xerjoff_Alexandria_II.webp" alt="Xerjoff Alexandria II" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-lg font-bold">Xerjoff Alexandria II</h3>
+            <p class="text-sm text-gray-300 mb-2">Familia Olfativa Amaderada</p>
+            <p class="text-sm font-semibold text-gray-200">$1.300.000</p>
+          </div>
+        </div>
+
+        <div class="producto" data-genero="dama" data-tipo="diseñador">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+            <img src="./image/coco.avif" alt="Coco Modemoiselle" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-lg font-bold">Coco Modemoiselle</h3>
+            <p class="text-sm text-gray-300 mb-2">Familia Olfativa Ambar Floral</p>
+            <p class="text-sm font-semibold text-gray-200">$900.000</p>
+          </div>
+        </div>
+
+        <div class="producto" data-genero="hombre" data-tipo="diseñador">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+            <img src="./image/5.jpg" alt="Allure Homme Sport" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-lg font-bold">Allure Homme Sport</h3>
+            <p class="text-sm text-gray-300 mb-2">Familia Olfativa Amaderada Especiada</p>
+            <p class="text-sm font-semibold text-gray-200">$850.000</p>
+          </div>
+        </div>
+
+
+        <div class="producto" data-genero="dama" data-tipo="diseñador">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+            <img src="./image/4.jpg" alt="Coco Noir" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-lg font-bold">Coco Noir</h3>
+            <p class="text-sm text-gray-300 mb-2">Familia Olfativa Ámbar Amaderada</p>
+            <p class="text-sm font-semibold text-gray-200">$850.000</p>
+          </div>
+        </div>
+
+
+        <div class="producto" data-genero="hombre" data-tipo="nicho">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+            <img src="./image/naxos.jpg" alt="Xerjoff Naxos" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-lg font-bold">Xerjoff Naxos</h3>
+            <p class="text-sm text-gray-300 mb-2">Familia Olfativa Cítrica Gourmand</p>
+            <p class="text-sm font-semibold text-gray-200">$1.300.000</p>
+          </div>
+        </div>
+
+         <div class="producto" data-genero="hombre" data-tipo="diseñador">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+            <img src="./image/onemillonlucky.jpg" alt="Xerjoff Naxos" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-lg font-bold">One Millon Lucky</h3>
+            <p class="text-sm text-gray-300 mb-2">Familia Olfativa Amaderada </p>
+            <p class="text-sm font-semibold text-gray-200">$500.000</p>
+          </div>
+        </div>
+
+         <div class="producto" data-genero="hombre" data-tipo="diseñador">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+            <img src="./image/homeparfun.avif" alt="Xerjoff Naxos" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-lg font-bold">Home Parfum</h3>
+            <p class="text-sm text-gray-300 mb-2">Familia Olfativa Almizclado Amaderado Floral</p>
+            <p class="text-sm font-semibold text-gray-200">$850.000</p>
+          </div>
+        </div>
+
+         <div class="producto" data-genero="dama" data-tipo="diseñador">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+            <img src="./image/fameparfum.jpg" alt="Xerjoff Naxos" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-lg font-bold">Fame Parfum</h3>
+            <p class="text-sm text-gray-300 mb-2">Familia Olfativa Amaderada </p>
+            <p class="text-sm font-semibold text-gray-200">$600.000</p>
+          </div>
+        </div>
+
+         <div class="producto" data-genero="dama" data-tipo="diseñador">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+            <img src="./image/missdior.webp" alt="Xerjoff Naxos" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-lg font-bold">Miss Dior</h3>
+            <p class="text-sm text-gray-300 mb-2">Familia Olfativa Amaderada </p>
+            <p class="text-sm font-semibold text-gray-200">$750.000</p>
+          </div>
+        </div>
+
+         <div class="producto" data-genero="hombre" data-tipo="diseñador">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+            <img src="./image/phantomelixir.jpg" alt="Xerjoff Naxos" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-lg font-bold">Phantom Elixir</h3>
+            <p class="text-sm text-gray-300 mb-2">familia olfativa Amaderada </p>
+            <p class="text-sm font-semibold text-gray-200">$600.000</p>
+          </div>
+        </div>
+
+         <div class="producto" data-genero="hombre" data-tipo="diseñador">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+            <img src="./image/victory.jpg" alt="Xerjoff Naxos" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-lg font-bold">Invictus Victory </h3>
+            <p class="text-sm text-gray-300 mb-2">familia olfativa Oriental </p>
+            <p class="text-sm font-semibold text-gray-200">$500.000</p>
+          </div>
+        </div>
+          
+        <div class="producto" data-genero="hombre" data-tipo="nicho">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+            <img src="./image/summer.webp" alt="Summer Hammer" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-lg font-bold">Summer Hammer</h3>
+            <p class="text-sm text-gray-300 mb-2"> Familia Olfativa Afrutado Amaderado</p>
+            <p class="text-sm font-semibold text-gray-200">$800.000</p>
+          </div>
+        </div>
+
+        <div class="producto" data-genero="hombre" data-tipo="nicho">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+            <img src="./image/blacksea.jpg" alt="Black Sea" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-lg font-bold">Black Sea</h3>
+            <p class="text-sm text-gray-300 mb-2"> Familia Olfativa Marino Amaderado</p>
+            <p class="text-sm font-semibold text-gray-200">$800.000</p>
+          </div>
+        </div>
+
+        <div class="producto" data-genero="hombre" data-tipo="nicho">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+            <img src="./image/arabianstonka.webp" alt="Arabians Tonka" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-lg font-bold">Arabians Tonka</h3>
+            <p class="text-sm text-gray-300 mb-2">Familia Olfativa Oriental Amaderada</p>
+            <p class="text-sm font-semibold text-gray-200">$500.000</p>
+          </div>
+        </div>
+
+        <div class="producto" data-genero="hombre" data-tipo="nicho">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+            <img src="./image/aventus.webp" alt="Creed Aventus" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-lg font-bold">Creed Aventus</h3>
+            <p class="text-sm text-gray-300 mb-2">Familia Olfativa Frutal Floral</p>
+            <p class="text-sm font-semibold text-gray-200">$1.500.000</p>
+          </div>
+        </div>
+
+        <div class="producto" data-genero="dama" data-tipo="diseñador">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+            <img src="./image/goodgril.webp" alt="Good Girl Blush" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-lg font-bold">Good Girl Blush</h3>
+            <p class="text-sm text-gray-300 mb-2">Familia Olfativa Chipre Frutal</p>
+            <p class="text-sm font-semibold text-gray-200">$600.000</p>
+          </div>
+        </div>
+        
+             <div class="producto" data-genero="hombre" data-tipo="diseñador">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+            <img src="./image/bluechanel.avif" alt="Arabians Tonka" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-lg font-bold">Blue Chanel</h3>
+            <p class="text-sm text-gray-300 mb-2">Familia Olfativa Amaderada</p>
+            <p class="text-sm font-semibold text-gray-200">$900.000</p>
+          </div>
+        </div>
+
+        <div class="producto" data-genero="dama" data-tipo="diseñador">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+            <img src="./image/CHANCE.avif" alt="Chance Chanel" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-lg font-bold">Chance Chanel</h3>
+            <p class="text-sm text-gray-300 mb-2">Familia Olfativa Floral Afrutada</p>
+            <p class="text-sm font-semibold text-gray-200">$800.000</p>
+          </div>
+        </div>
+
+        <div class="producto" data-genero="hombre" data-tipo="nicho">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+            <img src="./image/silver.jpg" alt="Creed Silver" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-lg font-bold">Creed Silver</h3>
+            <p class="text-sm text-gray-300 mb-2">Familia Olfativa Chipre Frutal </p>
+            <p class="text-sm font-semibold text-gray-200">$1.500.000</p>
+          </div>
+        </div>
+
+        <div class="producto" data-genero="dama" data-tipo="nicho">
+          <div class="bg-gray-900 text-white rounded-lg shadow-lg p-4 transform transition-transform hover:scale-105">
+            <img src="./image/starry.webp" alt="Starry Night" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-lg font-bold">Starry Night</h3>
+            <p class="text-sm text-gray-300 mb-2">Familia Olfativa Oriental Floral</p>
+            <p class="text-sm font-semibold text-gray-200">$500.000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <script>
+  const filtroGenero = document.getElementById('filtroGenero');
+  const filtroTipo = document.getElementById('filtroTipo');
+  const productos = document.querySelectorAll('.producto');
+
+  // Leer parámetros de la URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const tipoInicial = urlParams.get('tipo');
+  const generoInicial = urlParams.get('genero');
+
+  if (tipoInicial) filtroTipo.value = tipoInicial;
+  if (generoInicial) filtroGenero.value = generoInicial;
+
+  function filtrarProductos() {
+    const genero = filtroGenero.value;
+    const tipo = filtroTipo.value;
+
+    productos.forEach(producto => {
+      const generoProd = producto.dataset.genero;
+      const tipoProd = producto.dataset.tipo;
+
+      const mostrarGenero = (genero === "todos" || genero === generoProd);
+      const mostrarTipo = (tipo === "todos" || tipo === tipoProd);
+
+      if (mostrarGenero && mostrarTipo) {
+        producto.classList.remove('hidden');
+      } else {
+        producto.classList.add('hidden');
+      }
+    });
+  }
+
+  // Escuchar cambios
+  filtroGenero.addEventListener('change', filtrarProductos);
+  filtroTipo.addEventListener('change', filtrarProductos);
+
+  // Aplicar filtro al cargar si viene con parámetros
+  window.addEventListener('DOMContentLoaded', filtrarProductos);
+</script>
+
+
+</body>
+</html>

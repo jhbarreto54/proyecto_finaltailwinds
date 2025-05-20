@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - Perfumería Xotic</title>
+  <link href="./output.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 font-[Poppins]">
+
+  <!-- Navbar -->
+  <nav class="bg-black text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="text-2xl font-bold">Perfumería Xotic</a>
+        <div class="hidden md:flex space-x-8 text-lg font-medium">
+          <a href="index.html" class="hover:text-gray-300">Inicio</a>
+          <a href="productos.html" class="hover:text-gray-300">Productos</a>
+          <a href="index.html#nosotros" class="hover:text-gray-300">Nosotros</a>
+          <a href="contacto.html" class="text-pink-400 font-bold">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Encabezado -->
+  <section class="bg-gradient-to-r from-black to-gray-900 text-white py-16 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Contáctanos</h1>
+    <p class="text-lg md:text-xl text-gray-300">¿Tienes alguna duda o necesitas asistencia? Estamos para ayudarte.</p>
+  </section>
+
+  <!-- Formulario de contacto -->
+  <section class="py-12 bg-gray-100">
+    <div class="max-w-3xl mx-auto px-6 bg-white rounded-xl shadow-xl p-8">
+      <form class="space-y-6">
+        <div>
+          <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required
+                 class="w-full p-2 border border-gray-400 rounded-md bg-white focus:outline-none focus:border-pink-500 focus:ring-pink-500">
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+          <input type="email" id="email" name="email" required
+                 class="w-full p-2 border border-gray-400 rounded-md bg-white focus:outline-none focus:border-pink-500 focus:ring-pink-500">
+        </div>
+
+        <div>
+          <label for="asunto" class="block text-sm font-medium text-gray-700">Asunto</label>
+          <input type="text" id="asunto" name="asunto"
+                 class="w-full p-2 border border-gray-400 rounded-md bg-white focus:outline-none focus:border-pink-500 focus:ring-pink-500">
+        </div>
+
+        <div>
+          <label for="mensaje" class="block text-sm font-medium text-gray-700">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required
+                    class="w-full p-2 border border-gray-400 rounded-md bg-white focus:outline-none focus:border-pink-500 focus:ring-pink-500"></textarea>
+        </div>
+
+        <div class="text-right">
+          <button type="submit"
+                  class="bg-black text-white font-bold py-2 px-6 rounded-md shadow hover:bg-gray-800 transition">
+            Enviar mensaje
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-6 text-center">
+    <p class="text-sm">&copy; 2025 Perfumería Xotic. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
